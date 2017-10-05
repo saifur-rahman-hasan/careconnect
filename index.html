@@ -85,20 +85,7 @@
                         <button type="submit">Sign In</button>
                     </div>
 
-                    <!-- Sign-In Errors -->
-                    <% if (errors != null && showRegisterForm == null) { %>
-                        <% errors.forEach(function(err){ %>
-                            <p class="message error"><%= err %></p>
-                        <% }); %>
-                    <% } %>
-                    <!-- End Sign-In Errors -->
-
-                    <!-- Sign-In Success -->
-                    <%if (success != null && showRegisterForm == null) { %>
-                        <p class="message success"><%= success %></p>
-                    <% } %>
-                    <!-- End Sign-In Success -->
-
+                    
                 </div>
             </form>
             <!-- End Form Sign-In -->
@@ -147,13 +134,7 @@
                         </button>
                     </div>
 
-                    <!-- Sign-Up Errors -->
-                    <% if (errors != null && showRegisterForm != null && showRegisterForm === true) { %>
-                        <% errors.forEach(function(err){ %>
-                            <p class="message error"><%= err %></p>
-                        <% }); %>
-                    <% } %>
-                    <!-- End Sign-Up Errors -->
+                    
 
                 </div>
 
