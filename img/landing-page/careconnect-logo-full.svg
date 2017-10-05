@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 479.2 114.2" style="enable-background:new 0 0 479.2 114.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);stroke:#FBFBFB;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#F1F2F2;}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:#FBFBFB;}
+	.st4{font-family:'MyriadPro-Bold';}
+	.st5{font-size:66.4543px;}
+	.st6{font-family:'MyriadPro-Regular';}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.9727" y1="111.6526" x2="106.5572" y2="4.3317">
+	<stop  offset="0" style="stop-color:#282561"/>
+	<stop  offset="0.1313" style="stop-color:#273974"/>
+	<stop  offset="0.2964" style="stop-color:#274E8B"/>
+	<stop  offset="0.4651" style="stop-color:#275F9E"/>
+	<stop  offset="0.6365" style="stop-color:#226BAD"/>
+	<stop  offset="0.8125" style="stop-color:#2073B7"/>
+	<stop  offset="1" style="stop-color:#2075BC"/>
+</linearGradient>
+<circle class="st0" cx="57.1" cy="57.1" r="55.6"/>
+<g>
+	<g>
+		<path class="st1" d="M84.1,32c-13-15.3-35-16.8-49.7-3.4s-16.3,36.5-3.3,51.4c0.3,0,0.6,0.7,0.9,1.1c0.3,0.4,0.3,0.7,0,1.5
+			c-1.5,3.7-3.9,6.7-6.9,9.3c4.5,0,8.7-1.5,12.1-4.5c0.6-0.7,1.8-1.1,2.7-0.4c13.6,8.6,31,6,42.5-5.6C95.3,68.2,95.9,46.6,84.1,32z"
+			/>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="37.2715" y1="56.0179" x2="77.7285" y2="56.0179" gradientTransform="matrix(1 0 0 1 -0.125 0)">
+			<stop  offset="0" style="stop-color:#E64C3C"/>
+			<stop  offset="1" style="stop-color:#E64C3C"/>
+		</linearGradient>
+		<path class="st2" d="M76.9,51.4c-0.7-0.7-1.3-1-2-0.7H63V38.4c0-1.7-1.3-2.7-2.7-2.7h-5.6c-1.7,0-2.7,1.3-2.7,2.7v12.3H39.8
+			c-1.7,0-2.7,1.3-2.7,2.7V59c0,1.7,1.3,2.7,2.7,2.7h12.3v11.9c0,1.7,1.3,2.7,2.7,2.7h5.6c1.7,0,2.7-1.3,2.7-2.7V62H75
+			c1.7,0,2.7-1.3,2.7-2.7v-5.6C77.6,52.7,77.3,52,76.9,51.4z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 128.4961 73.5781)"><tspan x="0" y="0" class="st3 st4 st5">care</tspan><tspan x="125.4" y="0" class="st3 st6 st5">connect</tspan></text>
+</svg>

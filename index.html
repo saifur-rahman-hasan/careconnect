@@ -1,0 +1,301 @@
+<!--
+	Project Name 			:	Care Connect;
+	Project Description 	:	Care Connect Landing Page for #gishanratnayake;
+	Developer Name 			:	Saifur Rahman (Hasan);
+	Developer Contact Number:	+8801727213319;
+	Developer Email 		:	saifur.dohs@gmail.com;
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/landing-page/favicon.png">
+
+    <!-- Page Title -->
+    <title>Careconnect | Sign In</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Landing Page CSS -->
+    <link rel="stylesheet" href="css/landing-page.css">
+
+    <!-- Theme Pre-loader -->
+    <script type="text/javascript">
+        window.addEventListener('load', function(){
+            var theme_preloader	    =	document.getElementById('theme_preloader');
+            var theme_wrapper		=	document.getElementById('theme_wrapper');
+            var preloadID = window.setInterval(function(){
+                document.body.removeChild(theme_preloader);
+                theme_wrapper.classList.add('display-show');
+                clearInterval(preloadID);
+            }, 3000);
+        });
+    </script>
+    <!-- Window Pre-loader -->
+
+</head>
+<body>
+
+    <!-- Theme Pre Loading Wrapper -->
+    <div id="theme_preloader">
+        <div class="center-xy">
+            <img src="img/landing-page/loading.gif" alt="Care Connect window Pre-loading GIF">
+        </div>
+    </div>
+    <!-- End Theme Pre Loading Wrapper -->
+
+    <!-- Theme Wrapper -->
+    <div id="theme_wrapper" class="landing-page">
+
+
+
+        <!-- Sign-up and Sign-In Form Container -->
+        <div class="materialContainer">
+
+            <!-- Form Sign-In -->
+            <form action="/login" method="post" class="form-signin">
+                <div class="box">
+
+                    <!-- Form Title -->
+                    <div class="title">Sign In</div>
+
+                    <!-- Field - Username -->
+                    <div class="input">
+                        <label for="login-username">Username</label>
+                        <input type="text" name="username" id="login-username">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Field - Password -->
+                    <div class="input">
+                        <label for="login-password">Password</label>
+                        <input type="password" name="password" id="login-password">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Sign-In Button -->
+                    <div class="button login">
+                        <button type="submit">Sign In</button>
+                    </div>
+
+                    <!-- Sign-In Errors -->
+                    <% if (errors != null && showRegisterForm == null) { %>
+                        <% errors.forEach(function(err){ %>
+                            <p class="message error"><%= err %></p>
+                        <% }); %>
+                    <% } %>
+                    <!-- End Sign-In Errors -->
+
+                    <!-- Sign-In Success -->
+                    <%if (success != null && showRegisterForm == null) { %>
+                        <p class="message success"><%= success %></p>
+                    <% } %>
+                    <!-- End Sign-In Success -->
+
+                </div>
+            </form>
+            <!-- End Form Sign-In -->
+
+            <!-- Register Form -->
+            <form action="/register" method="post">
+                <div class="overbox">
+
+                    <div class="material-button alt-2"><span class="shape"></span></div>
+
+                    <!-- Form Title -->
+                    <div class="title">Register</div>
+
+                    <!-- Field - First name -->
+                    <div class="input">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Field - Last name -->
+                    <div class="input">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Field - Username -->
+                    <div class="input">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Field - Password -->
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                        <span class="spin"></span>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="button">
+                        <button type="submit">
+                            <span>Sign Up</span>
+                        </button>
+                    </div>
+
+                    <!-- Sign-Up Errors -->
+                    <% if (errors != null && showRegisterForm != null && showRegisterForm === true) { %>
+                        <% errors.forEach(function(err){ %>
+                            <p class="message error"><%= err %></p>
+                        <% }); %>
+                    <% } %>
+                    <!-- End Sign-Up Errors -->
+
+                </div>
+
+            </form>
+            <!-- End Register Form  -->
+
+        </div>
+        <!-- End Sign-Up and Sign-In Form -->
+    </div>
+    <!-- End Theme Wrapper -->
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Particles JS and It's Config -->
+    <script src="js/particles-js/particles.js"></script>
+    <script src="js/particles-js/particles-config.js"></script>
+
+    <!-- Sign-Up and Sign-In Form Toggle -->
+    <script>
+        $(function() {
+
+            $(".input input").focus(function() {
+
+                $(this).parent(".input").each(function() {
+                    $("label", this).css({
+                        "line-height": "16px",
+                        "font-size": "16px",
+                        "font-weight": "100",
+                        "top": "15px"
+                    })
+                    $(".spin", this).css({
+                        "width": "100%"
+                    })
+                });
+            }).blur(function() {
+                $(".spin").css({
+                    "width": "0px"
+                })
+                if ($(this).val() == "") {
+                    $(this).parent(".input").each(function() {
+                        $("label", this).css({
+                            "line-height": "50px",
+                            "font-size": "20px",
+                            "font-weight": "300",
+                            "top": "0px"
+                        })
+                    });
+
+                }
+            });
+
+            $(".button").click(function(e) {
+                var pX = e.pageX,
+                    pY = e.pageY,
+                    oX = parseInt($(this).offset().left),
+                    oY = parseInt($(this).offset().top);
+
+                $(this).append('<span class="click-efect x-' + oX + ' y-' + oY + '" style="margin-left:' + (pX - oX) + 'px;margin-top:' + (pY - oY) + 'px;"></span>')
+                $('.x-' + oX + '.y-' + oY + '').animate({
+                    "width": "500px",
+                    "height": "500px",
+                    "top": "-250px",
+                    "left": "-250px",
+
+                }, 600);
+                $("button", this).addClass('active');
+            })
+
+            $(".alt-2").click(function() {
+                 if (!$(this).hasClass('material-button')) {
+                    $(".shape").css({
+                        "width": "100%",
+                        "height": "100%",
+                        "transform": "rotate(0deg)"
+                    })
+
+                    setTimeout(function() {
+                        $(".overbox").css({
+                            "overflow": "initial"
+                        })
+                    }, 600)
+
+                    $(this).animate({
+                        "width": "80px",
+                        "height": "80px"
+                    }, 500, function() {
+                        $(".box").removeClass("back");
+
+                        $(this).removeClass('active')
+                    });
+
+                    $(".overbox .title").fadeOut(300);
+                    $(".overbox .input").fadeOut(300);
+                    $(".overbox .button").fadeOut(300);
+
+                    $(".alt-2").addClass('material-buton');
+                }
+
+            })
+
+            $(".material-button").click(function() {
+
+                if ($(this).hasClass('material-button')) {
+                    setTimeout(function() {
+                        $(".overbox").css({
+                            "overflow": "hidden"
+                        })
+                        $(".box").addClass("back");
+                    }, 200)
+                    $(this).addClass('active').animate({
+                        "width": "700px",
+                        "height": "700px"
+                    });
+
+                    setTimeout(function() {
+                        $(".shape").css({
+                            "width": "50%",
+                            "height": "50%",
+                            "transform": "rotate(45deg)"
+                        })
+
+                        $(".overbox .title").fadeIn(300);
+                        $(".overbox .input").fadeIn(300);
+                        $(".overbox .button").fadeIn(300);
+                    }, 700)
+
+                    $(this).removeClass('material-button');
+
+                }
+
+                if ($(".alt-2").hasClass('material-buton')) {
+                    $(".alt-2").removeClass('material-buton');
+                    $(".alt-2").addClass('material-button');
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
